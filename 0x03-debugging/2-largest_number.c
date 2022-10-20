@@ -1,30 +1,22 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
-* largest_number - returns the largest of 3 numbers
-* @a: first integer
-* @b: second integer
-* @c: third integer
-* Return: largest number
-*/
+using namespace std;
 
-int largest_number(int a, int b, int c)
-{
-	int largest;
+int main() {    
+    int n1, n2, n3;
 
-	if (a > b && a > c)
-	{
-		largest = a;
-	}
-	else if (a > b && c > a)
-	{
-		largest = c;
-	}
-	else if (b > c && c > a)
-	{
-		largest = b;
-	}
+    cout << "Enter three numbers: ";
+    cin >> n1 >> n2 >> n3;
 
-return (largest);
+    if(n1 >= n2 && n1 >= n3)
+        cout << "Largest number: " << n1;
+
+    if(n2 >= n1 && n2 >= n3)
+        cout << "Largest number: " << n2;
+    
+    if(n3 >= n1 && n3 >= n2)
+        cout << "Largest number: " << n3;
+  
+    return 0;
 }
