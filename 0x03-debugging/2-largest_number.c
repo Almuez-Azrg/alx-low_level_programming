@@ -2,8 +2,9 @@
 #include "main.h"
 
 int main() {
+void largest_number(int a, int b, int c)
 
-  double n1, n2, n3;
+  int n1, n2, n3;
 
   printf("Enter three different numbers: ");
   scanf("%lf %lf %lf", &n1, &n2, &n3);
