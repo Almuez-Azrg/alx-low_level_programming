@@ -1,15 +1,20 @@
 #include "main.h"
+
 /**
- *_puts_recursion - prints a string
- *@s: pointer block of memory to fill
- *Return: void
+ * main -  prints _putchar, followed by a new line
+ * Return: Always 0 (Success)
  */
-
-void _puts_recursion(char *s)
-
+int main(void)
 {
-if (*s == '\0')
-{
-_putchar('\n');
-return;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return (0);
 }
