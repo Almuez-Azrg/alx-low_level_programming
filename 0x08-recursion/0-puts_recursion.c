@@ -1,20 +1,17 @@
 #include "main.h"
-
 /**
- * main -  prints _putchar, followed by a new line
+ * _puts_recursion - function like puts();
+ * @s: input
  * Return: Always 0 (Success)
  */
-int main(void)
+void _puts_recursion(char *s)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
 
-	return (0);
+	else
+		_putchar('\n');
 }
